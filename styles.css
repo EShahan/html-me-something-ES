@@ -5,14 +5,40 @@
 
 .sidebar {
     padding: 8px 0;
-    background-color: lightblue;
     position: fixed;
     width: 130px;
     top: 20px;
-    right: 0;
+    right: 300px;
     overflow-x: hidden;
 }
 
 .sidebar a {
     padding: 6px 8px 6px 16px;
+}
+
+.leftBanner {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    display: block;
+}
+
+.rightBanner {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: black;
+    display: block;
+}
+
+
+.body {
+    margin-left: 310px; /*Width of left banner + 10px*/
+    margin-right: 440px; /*Width of right banner + sidebar + 10px*/
+    background-color: #9ab5c8
 }
