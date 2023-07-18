@@ -50,6 +50,9 @@
     display: block;
 }
 
+main {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 body {
     margin-left: 310px; /*Width of left banner + 10px*/
