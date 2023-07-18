@@ -22,10 +22,12 @@
 .sidebar a {
     padding: 6px 8px 6px 16px;
     color: black;
+    font-size: large;
 }
 
 .sidebar a:hover {
-    color: white;
+    color: rgb(92, 92, 92);
+    font-size: larger;
 }
 
 .leftBanner {
@@ -57,7 +59,16 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+#indexBody {
+    margin-left: 310px; /*Width of left banner + 10px*/
+    margin-right: 320px; /*Width of right banner + sidebar + 10px*/
+}
+
 p {
+    font-size: large;
+}
+
+li {
     font-size: large;
 }
 
@@ -65,14 +76,19 @@ p {
     color: black;
 }
 
+.heading a:hover {
+    color: rgb(92, 92, 92);
+    font-size: larger;
+}
+
 #funParagraph {
     padding-bottom: 30px;
     /* color: green;
-    ^ Would change color to green*/
+    ^ Would change color to green */
 }
 
 #mainHeading {
     font-family: fantasy;
     /* color: red;
-    ^ Would change color to red*/
+    ^ Would change color to red */
 }
