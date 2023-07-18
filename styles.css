@@ -58,6 +58,7 @@ body {
     margin-left: 310px; /*Width of left banner + 10px*/
     margin-right: 450px; /*Width of right banner + sidebar + 10px*/
     margin-bottom: 100px;
+    /* margin: 8px to do class assignment above*/
     background-color: #9ab5c8;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -79,12 +80,12 @@ li {
     font-size: larger;
 }
 
-#funParagraph {
+.funParagraph {
     padding-bottom: 30px;
-    /* color: green;*/
+    /* color: green; */
 }
 
 #mainHeading {
     font-family: fantasy;
-    /* color: red;*/
+    /* color: red; */
 }
