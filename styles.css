@@ -21,6 +21,11 @@
 
 .sidebar a {
     padding: 6px 8px 6px 16px;
+    color: black;
+}
+
+.sidebar a:hover {
+    color: white;
 }
 
 .leftBanner {
@@ -44,9 +49,30 @@
 }
 
 
-.body {
+body {
     margin-left: 310px; /*Width of left banner + 10px*/
     margin-right: 450px; /*Width of right banner + sidebar + 10px*/
     margin-bottom: 100px;
-    background-color: #9ab5c8
+    background-color: #9ab5c8;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+    font-size: large;
+}
+
+.pageLink {
+    color: black;
+}
+
+#funParagraph {
+    padding-bottom: 30px;
+    /* color: green;
+    ^ Would change color to green*/
+}
+
+#mainHeading {
+    font-family: fantasy;
+    /* color: red;
+    ^ Would change color to red*/
 }
