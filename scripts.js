@@ -4,16 +4,56 @@ window.addEventListener("load", event=> {
     const OuchOne = document.getElementById("OuchOne");
     const ResponseOne = document.getElementById("ResponseOne");
     const QuestionOne = document.getElementById("QuestionOne");
-    function ResponseOnePositiveEvent() {
-        ResponseOne.innerHTML = "I liked it at one point, but I've done it so much I think I hate it now."
+    function ResponseOneEvent() {
+        var imgOne = document.createElement("img");
+        imgOne.src = "./Images/MeTear.png";
+        var srcOne = ResponseOne;
+        srcOne.appendChild(imgOne);
+        imgOne.style.height = "100px";
+        imgOne.style.width = "100px";
         QuestionOne.remove();
     }
-    function ResponseOneQuestionEvent() {
-        ResponseOne.innerHTML = "Why must you hurt me in this way."
-        QuestionOne.remove();
+    YeahOne.addEventListener("click", ResponseOneEvent);
+    AbsolutelyOne.addEventListener("click", ResponseOneEvent);
+    OuchOne.addEventListener("click", ResponseOneEvent);
+
+    const Puncture = document.getElementById("Puncture");
+    const InnerFire = document.getElementById("Inner Fire");
+    const DestructiveClench = document.getElementById("Destructive Clench");
+    const ResponseTwo = document.getElementById("ResponseTwo");
+    const QuestionTwo = document.getElementById("QuestionTwo");
+    function ResponseTwoRight() {
+        ResponseTwo.innerHTML = "Yep, Puncture is the only melee taunt!";
+        QuestionTwo.remove();
     }
-    YeahOne.addEventListener("click", ResponseOnePositiveEvent);
-    AbsolutelyOne.addEventListener("click", ResponseOnePositiveEvent);
-    OuchOne.addEventListener("click", ResponseOneQuestionEvent);
+    function ResponseTwoWrong() {
+        ResponseTwo.innerHTML = "No, Puncture is the only melee taunt!";
+        QuestionTwo.remove();
+    }
+    Puncture.addEventListener("click", ResponseTwoRight);
+    InnerFire.addEventListener("click", ResponseTwoWrong);
+    DestructiveClench.addEventListener("click", ResponseTwoWrong);
+
+    const Defense = document.getElementById("Defense");
+    const Cool = document.getElementById("Cool");
+    const Resources = document.getElementById("Resources");
+    const ResponseThree = document.getElementById("ResponseThree");
+    const QuestionThree = document.getElementById("QuestionThree");
+
+    function ResponseThreeRight() {
+        ResponseThree.innerHTML = "Yes, you'll have more defense!"
+        QuestionThree.remove();
+    }
+    function ResponseThreeTech() {
+        ResponseThree.innerHTML = "I mean. Yes, but I was looking for 'more defense!'"
+        QuestionThree.remove();
+    }
+    function ResponseThreeWrong() {
+        ResponseThree.innerHTML = "No, that's for mixed armor. 7 Heavy offers more defense, and the same HP."
+        QuestionThree.remove();
+    }
+    Defense.addEventListener("click", ResponseThreeRight);
+    Cool.addEventListener("click", ResponseThreeTech);
+    Resources.addEventListener("click", ResponseThreeWrong);
     console.log("page is fully loaded");
 });
